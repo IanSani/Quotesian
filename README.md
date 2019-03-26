@@ -23,7 +23,13 @@ Sever side
 
 ## Behavior Driven Development
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+|INPUT|OUTPUT|
+|-----|------|
+|Input name,quote and the Date | Quote is shown on the display|
+|Press on Add button| Quote is displayed on the view page|
+
+
 
 ## Support and Contact Details
 
@@ -31,4 +37,4 @@ For more information o the app or if may come acrossa any issues you come contac
 
 ## Licensing
 
-The applicaton is is under MIT licence and is under it terms and conditions.All right reserved. 
+The applicaton is is under MIT licence and is under it terms and conditions.All right reserved.
