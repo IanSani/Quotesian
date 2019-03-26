@@ -9,12 +9,12 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
  quotes = [
-   new Quote(1, 'The quickest way to double your money is to fold it over and put it back in your pocket', 'Will Rodgers', new Date(2019, 2, 18)),
-   new Quote(2, 'Even if you’re on the right track, you’ll get run over if you just sit there', 'Jobroy Mwaura', new Date(2019, 0, 7)),
+   new Quote(1, 'Things change. And friends leave. Life does not stop for anybody', 'Stephen chibosky', new Date(2019, 1, 18)),
+   new Quote(2, 'Education is the most powerful weapon which you can use to change the world', 'Nelson Mandela', new Date(2019, 0, 7)),
    new Quote(3, 'Nurture your mind with great thoughts. To believe in the heroic makes heroes.', 'Benjamin Disrael', new Date(2019, 6, 26)),
    new Quote(4, 'When I let go of what I am, I become what I might be', 'Jantrix Jane', new Date(2019, 7, 27)),
    new Quote(5, 'Luck is a dividend of sweat. The more you sweat, the luckier you get.', 'Barbra Gee', new Date(2019, 12, 18)),
-   new Quote(6, 'The real opportunity for success lies within the person and not in the job', 'Zig Ziglar', new Date(2019, 6, 23)),
+   new Quote(6, 'Those who cannot change their minds cannot change anything', 'George Benard shaw', new Date(2019, 6, 23)),
  ]
  deleteQuote(isComplete, index) {
    if (isComplete) {
