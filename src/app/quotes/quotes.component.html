@@ -12,12 +12,15 @@
          <li id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
          <button class="btn btn-success" (click)='toogleDetails(i)'>Toogle Details</button>
        </div>
-       <p>complete in {{quote.completeDate|dateCount}} days</p>
-       
+
+
 
        <div class="row" *ngIf="quote.showDescription">
          <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
        </div>
+       <br>
+       <p>complete in {{quote.completeDate|dateCount}} days</p>
+       <br>
 
      </div>
    </div>
