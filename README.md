@@ -2,9 +2,9 @@
 
 It is an angular application that allows one to add a quote which will be upvoted depending if it is liked or downvoted. The user is also able to delete the quote if need be.
 
-##
+## List of Contributors
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ian Sani
 
 ## Setup/Installation requirements
 
@@ -18,16 +18,17 @@ Run the localhost:4200 on the browser and the app is displayed
 Angular
 HTML
 css
-Bootstrap 
+Bootstrap
+Sever side
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
+## Behavior Driven Development
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Support and Contact Details
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For more information o the app or if may come acrossa any issues you come contact me via email sani@gmail.com
+
+## Licensing
+
+The applicaton is is under MIT licence and is under it terms and conditions.All right reserved. 
