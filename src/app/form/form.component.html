@@ -1,21 +1,33 @@
 
-   <form>
+   <form #goalForm='ngForm'>
      <!-- Name Form -->
-
+      <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
      <div class="form-group">
        <label for="name">Name</label>
-       <input type="text" class="form-control" required>
+       <input type="text" class="form-control" id="name" name="name" #name='ngModel' [(ngModel)]="newQuote.name" required>
+       <p>Display {{newQuote.name}}</p>
+       <div [hidden]="name.valid || name.pristine" class="alert-danger">
+         <p>Name is Required</p>
+         </div>
+
      </div>
      <!-- Description Input -->
      <div class="form-group">
        <label for="description">Description</label>
        <textarea class="form-control" id="description" rows="4" name="description"  required></textarea>
+       <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+                   <p> Description is Required</p>
+
+               </div>
      </div>
      <!-- Date Input -->
      <div class="form-group">
        <label for="complete">Completion</label>
        <input type='date' id="complete" name="completeDate"  required>
-      
+       <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+                   <p> Complete Date is Required</p>
+
+               </div>
      </div>
      <button type="Submit" class="btn btn-success btn-lg">Add Quote</button>
    </form>
