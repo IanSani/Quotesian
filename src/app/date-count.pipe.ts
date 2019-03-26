@@ -7,13 +7,15 @@ export class DateCountPipe implements PipeTransform {
 
   transform(value: any, args?: any): number {
     let today:Date =new Date();//get current date and AppRoutingModule//
-    let todayWithNOTime:any =new Date(today.getFullYear(),today.getmonth(),today.getDate())
-    var dateDifference=Math.abs(value-todayWithNoTIme)
+    let todayWithNOTime:any =new Date(today.getFullYear(),today.getMonth(),today.getDate())
+    var dateDifference=Math.abs(value-todayWithNOTime)
     const secondsInADay=86400;
 
-    var dateDifferenceSeconds=dateDifference*0.001;
+    var  dateDifferenceSeconds=dateDifference*0.001;
+    var dateCounter = dateDifferenceSeconds/secondsInADay;
 
-    if  (dateCounter>= 1 && value > todayWithNoTime){
+
+    if  (dateCounter>= 1 && value > todayWithNOTime){
       return dateCounter;
     }else{
       return 0;

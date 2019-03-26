@@ -12,6 +12,8 @@
          <li id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
          <button class="btn btn-success" (click)='toogleDetails(i)'>Toogle Details</button>
        </div>
+       <p>complete in {{quote.completeDate|dateCount}} days</p>
+       
 
        <div class="row" *ngIf="quote.showDescription">
          <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
@@ -25,11 +27,4 @@
    </div>
 
 <p *ngIf='quotes.length > 7'>You have too many Quotes</p>
-</div>
-<div class="card w-75 mb-3">
-  <div class="card-body">
-    <h5 class="card-title">Panel title</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#!" class="btn btn-primary">Button</a>
-  </div>
 </div>
